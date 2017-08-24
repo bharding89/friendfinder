@@ -1,0 +1,41 @@
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+
+</head>
+<body>
+  <center>  <div class="jumbotron">
+  <p class="lead"></p>
+  <hr class="my-4">
+  <p>Friend Finder</p>
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="/survey" role="button">Go to Survey</a>
+  </p>
+</div>
+  </center>
+
+  
+</body>
+</html>
+
+<script type = "text/javascript">
+function run friendsQuery() {
+ var currentURL = window.location.origin;
+
+ $ajax({url: currentURL = "/api/friends", method: "get"})
+    .done(function(friendsData){
+        console.log("URL: " + currentURL + "")
+    })
+}
+
+
+
+
+
+</script>
+
+    
